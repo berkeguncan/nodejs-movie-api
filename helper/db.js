@@ -9,4 +9,6 @@ module.exports = () => {
         console.log('Not Connected');
         console.log(err);
     });
+
+    mongoose.Promise = global.Promise;
 };
