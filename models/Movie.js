@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 const MovieSchema = new Schema({
     title: {
         type: String,
-        required: true
+        required: [true, 'Bu alan zorunludur']
     },
     category: String,
     country: String,
